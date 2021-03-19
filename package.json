@@ -1,0 +1,26 @@
+{
+  "name": "@youmoo/cal",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "my-cal": "index.js",
+    "@youmoo/cal": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Youmoo/cal.git"
+  },
+  "keywords": [
+    "cal"
+  ],
+  "author": "youmoo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Youmoo/cal/issues"
+  },
+  "homepage": "https://github.com/Youmoo/cal#readme"
+}
