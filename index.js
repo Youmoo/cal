@@ -6,7 +6,7 @@ main();
 
 function main() {
     const [year, week, days] = cal();
-    writeLn(' '.repeat(5), year.join(' '));
+    writeLn(' '.repeat(6) + year.join(' '));
     writeLn(week.join(' '));
     for (const [i, day] of days.entries()) {
         write(day);
