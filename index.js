@@ -23,5 +23,5 @@ function write(text) {
 }
 
 function writeLn(text = '') {
-    write('${text}\n');
+    write(`${text}\n`);
 }
