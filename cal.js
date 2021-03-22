@@ -39,10 +39,14 @@ function cal(d = new Date()) {
         const pad = sunday ? 2 : 3;
 
         if (i < day) {
+            // 1号之前的日期显示空位
             return ' '.repeat(pad);
         }
-        const text = String(i).padStart(pad, ' ');
-        if (i === date) {
+
+        // 1号之后的正常显示
+        const d = i - day + 1;
+        const text = String(d).padStart(pad, ' ');
+        if (d === date) {
             return [RED, text, NC].join('');
         }
         return text;
