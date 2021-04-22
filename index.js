@@ -2,6 +2,9 @@
 
 const cal = require('./cal');
 
+// 收集写到 stdout 的文字
+const lines = [];
+
 main();
 
 function main() {
@@ -22,12 +25,17 @@ function main() {
         }
     }
     writeLn();
+    writeEnd();
 }
 
 function write(text) {
-    process.stdout.write(text);
+    lines.push(text);
 }
 
 function writeLn(text = '') {
     write(`${text}\n`);
+}
+
+function writeEnd() {
+    console.log(lines.join(''));
 }
